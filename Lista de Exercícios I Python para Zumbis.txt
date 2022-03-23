@@ -1,0 +1,71 @@
+n1 = int(input('Número 1: '))
+n2 = int(input('Número 2: '))
+soma = int(n1) + int(n2)
+print('O resultado da soma é ' + str(soma))
+
+n1 = int(input('Medida em Metros : '))
+resultado = int(n1)* 1000
+print('A medida em milímetros é ' + str(resultado))
+
+dias =  input ("Digite uma quantidade de dias: ")
+horas = input("Digite uma quantidade de horas: ")
+minutos = input("Digite uma quantidade de minutos: ")
+segundos = input("Digite uma quantidade de segundos: ")
+
+toltalsegundos = (dias * 24 * 60 * 60) + (horas * 60 * 60) + (minutos * 60) + segundos
+
+print (dias,"dias ",horas,"horas ",minutos,"minutos ",segundos,"segundos equivalem a ", toltalsegundos,"segundos")
+
+salario = float(input('Digite o valor do salario: '))
+porcentagem  = float(input('Digite o valor do aumento em porcentagem: '))
+
+aumento = salario * porcentagem  / 100
+salarioNovo = salario + aumento
+
+print('O valor do aumento é de R$',aumento)
+print('O novo salario é de R$',salarioNovo)
+
+preço = float(input('Digite o valor do produto: '))
+desconto = float(input('Digite o valor do desconto: '))
+
+valorDesconto = preço * desconto / 100
+valorFinal = preço - desconto
+
+print('O valor do desconto é de R$',valorDesconto)
+print('Valor a pagar R$',valorFinal)
+
+distancia = float(input('Digite a distância a percorrer: '))
+velocidade = float(input('Digite a velocidade média: '))
+
+tempo = distancia/velocidade
+
+print ('Tempo em horas é',tempo)
+
+celsius = int(input('Digite a temperatura em Celsius: '))
+
+fahrenheit = (9/5) * celsius + 32
+
+print ('São %dº Fahrenheit' %fahrenheit)
+
+temp = int(input('Digite a temperatura em Fahrenheit: '))
+
+cel = (5/9) * (temp -32)
+
+print ('São %dº Celsius'%cel)
+
+qtkm = int(input('Qual a quantidade km percorrido? '))
+qtdia = int(input('Informe quantidade de dias de aluguel? '))
+
+valkm = qtkm * 0.15
+valdia = qtdia * 60.00
+total = valkm + valdia
+print ('O total é de R$%.2f' %total)
+
+cig = int(input('Qtde de cigarros por dia: '))
+tempo = int(input('Qtos anos fumando? '))
+
+total = float((((tempo * 365) * cig) * 10)/60)/24
+
+print ('Você já perdeu %.2f dias de sua vida fumando' %total)
+
+print (len(str(2**1000000)))
